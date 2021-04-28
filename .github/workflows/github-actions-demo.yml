@@ -19,7 +19,7 @@ jobs:
         yarn build
     - name: Build and Deploy
       uses: actions/setup-node@main
-      env:
+      with:
         COMMIT_EMAIL: hoa.tran@rikai.technology
         COMMIT_NAME: PhuHoaRikai
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
